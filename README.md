@@ -1,0 +1,2 @@
+# pwa-service-worker
+This repository contains the accompanying code for the article Progressive Web Apps (PWAs) - Service Workers published at Medium.com (To add URL). The article details how to incorporate a service worker into a web application and the key factors to be considered when adding the feature. It also includes a simple example to use push notifications to show how a service worker can run in the background without the application being in active focus. This content was also presented at https://www.meetup.com/AtlantaJavaScript/ (09-17-2018)
