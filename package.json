@@ -1,0 +1,14 @@
+{
+  "name": "pwa-service-worker",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Darren Seet <darren_seet@oredi.com> (http://www.oredi.com)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
