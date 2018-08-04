@@ -61,3 +61,34 @@ img {
   opacity: 1;
   display: block;
 }
+
+.left-top-region {
+  grid-area: left-top-region
+}
+
+.left-middle-region {
+  grid-area: left-middle-region
+}
+
+.left-bottom-region {
+  grid-area: left-bottom-region
+}
+
+.right-region {
+  grid-area: right-region;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 28.6% auto;  
+  grid-template-areas:
+    "left-top-region right-region"
+    "left-middle-region right-region"
+    "left-bottom-region right-region";  
+}
+
+a:hover, a:visited {
+  text-decoration: none;
+  cursor: grab;
+  cursor: -webkit-grab;
+}

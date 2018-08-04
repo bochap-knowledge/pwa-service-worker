@@ -7,7 +7,24 @@
     </head>
     <body>
         <div id="container">
-          <img src="images/main.png" />
+          <div class="left-top-region">
+              <a href="when.html">
+                  <img src="images/main_left_top.png" />
+              </a>
+          </div>
+          <div class="left-middle-region">
+              <a href="where.html">
+                <img src="images/main_left_middle.png" />
+              </a>
+          </div>
+          <div class="left-bottom-region">
+              <a id="what">
+                <img src="images/main_left_bottom.png" /> 
+              </a>
+          </div>
+          <div class="right-region">
+              <img src="images/main_right.png" />  
+          </div>
         </div>
         <div aria-hidden="true" id="toast-container" role="dialog" tabindex="-1">
           <h3 id="toast-title">Application Update</h3>
@@ -15,6 +32,6 @@
           <button id="toast-refresh">Refresh</button>
           <button id="toast-close">Close</button>
         </div>        
-        <script src="scripts/sw-controller.js" defer></script>
+        <script src="scripts/index-controller.js" defer></script>
       </body>
 </html>
