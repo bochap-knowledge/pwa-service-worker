@@ -54,10 +54,10 @@ self.addEventListener('fetch', (event) => {
       if (requestUrl.pathname === '/when.html') {
         fetch('http://localhost:8000/api/kill/')
           .then((response) => {
-            console.log('Server killed');
+            console.log(`Response from server: ${response}`);
           })
           .catch((error) => {
-            console.log('Server killed');
+            console.log(`Error: ${error}`);
           });
 
         event.respondWith(caches.match('when.html'));

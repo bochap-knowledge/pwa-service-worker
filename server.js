@@ -23,6 +23,7 @@ app.use(bodyParser.json());
 app.use('/sw.js', (req, res) => res.sendFile(path.join(__dirname, 'public/scripts/sw.js')));
 
 app.use('/api/kill', (req, res) => {
+  console.log('Kill server'); 
   server.close();
 });
 
@@ -57,8 +58,6 @@ app.use('/api/send-notification/', (req, res) => {
         res.send(JSON.stringify({data: {success: true}}));  
         const difference = Date.now() - start;
         console.log("seconds elapsed = " + Math.floor(difference/1000));
-        // console.log('Kill server');
-        // server.close();
       })
       .catch((error) => {
           // Clear subscription from store
