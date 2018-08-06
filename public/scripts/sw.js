@@ -1,4 +1,4 @@
-const staticCacheName = 'sw-static-v1';
+const staticCacheName = 'sw-static-v2';
 const dynamicCacheName = 'sw-dynamic';
 
 const staticResources = [
